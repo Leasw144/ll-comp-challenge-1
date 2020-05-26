@@ -1,0 +1,139 @@
+body {
+	font-family: sans-serif;
+	background-color: #01cdfe;
+}
+
+
+
+.navigation {
+	background-color:#fffb96;
+	width: 100%;
+	height: 200px;
+	display: grid;
+	grid-template-columns: repeat(8, auto);
+	grid-template-areas: 
+		'. . . . . . . login'
+		'shares playlist personal logo logo logo logo logo';
+	border-radius: 20px;
+	
+
+}
+
+.shares {
+	grid-area: shares;
+	display: flex;
+	margin-top: 6em;
+	padding-left: 2em;
+}
+
+.playlist {
+	grid-area: playlist;
+	display:flex;
+	margin-top: 6em;
+}
+
+.personal{
+	grid-area: personal;
+	display:flex;
+	justify-content: flex-start;
+	margin-top: 6em;
+}
+
+.login {
+	grid-area: login;
+	width: 100px;
+	display:flex;
+	margin: auto
+}
+
+.lil-icon {
+	height: 2em;
+	width:2em;
+}
+
+.logo {
+	grid-area: logo;
+	width:100px;
+	min-height: 300px;
+	justify-content: center;
+	margin:auto
+	
+}
+
+.card-sect {
+	display:flex;
+	justify-content: space-between;
+	margin: 2em;
+	flex-wrap:wrap
+}
+
+.card-pic {
+	z-index: 0;
+	height: 12em;
+	min-width: 20em;
+	position: absolute;
+}
+.med-pic {
+    background: red;
+		height: 8em;
+		border-radius: 100%;
+
+	
+}
+
+.arrow {
+	height:50px;
+	width:50px;
+	position: relative;
+  margin-top: 1em;
+}
+
+.info {
+	position: relative;
+}
+
+.navigation > p {
+	font-size:30px
+}
+header {
+	background: url('https://i.kym-cdn.com/entries/icons/original/000/034/008/cover3.jpg');
+	background-size: cover;
+	min-height: 12em;
+	display:flex;
+	justify-content: space-between;
+	background-color: #202020;
+	opacity:0.7;
+}
+
+header:hover {
+	opacity:1;
+}
+
+.views {
+	display:flex;
+	flex-direction: column;
+	z-index: 1;
+	top:5em;
+
+}
+
+.views > p {
+	font-size: 2em
+}
+
+.card {
+	background: #ff71ce;
+	height: 30em;
+	width: 20em;
+	border-radius: 5px;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 55em) {
+    body {
+        background: magenta;
+    }
+
+
+
+}
